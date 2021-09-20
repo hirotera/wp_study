@@ -22,7 +22,7 @@
   <link href="http://mysite.local/wp-content/themes/myblog/css/clean-blog.min.css" rel="stylesheet">
 
 </head>
-
+<?php wp_head() ?>
 <body>
 
 
@@ -76,7 +76,7 @@
         <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
+              <?php echo the_title() ?>
             </h2>
             <h3 class="post-subtitle">
               Problems look mighty small from 150 miles up
@@ -183,7 +183,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
-
+  <?php wp_footer() ?>
 </body>
 
 </html>
