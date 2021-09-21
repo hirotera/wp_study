@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog<?php echo date('n') ?></h1>
+            <h1>Clean Blog<?php echo date('Y') ?></h1>
             <span class="subheading">A Blog Theme by Start Bootstrap</span>
           </div>
         </div>
@@ -74,9 +74,10 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
+          <?php if(have_posts()): ?>            
           <a href="post.html">
-            <h2 class="post-title">
-              <?php echo the_title() ?>
+            <h2 class="post-title">             
+              <?php the_title(); ?>
             </h2>
             <h3 class="post-subtitle">
               Problems look mighty small from 150 miles up
@@ -134,6 +135,9 @@
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
+        <?php else: ?>
+          <p>記事が見つかりませんでした</p>
+          <?php endif; ?>
       </div>
     </div>
   </div>
