@@ -18,7 +18,8 @@
       <?php
       $eyecatch = get_eyecatch_with_default();
       ?>
-      <header class="masthead" style="background-image: url('<?php echo $eyecatch[0];')">
+      <!-- <header class="masthead" style="background-image: url('')"> -->
+      <header class="masthead" style="background-image: url('img/about-bg.jpg')">
         <div class="overlay"></div>
         <div class="container">
           <div class="row">
