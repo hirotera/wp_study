@@ -17,7 +17,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <?php if(is_category()): ?>
+            <h1><?php bloginfo('name'); ?></h1>
+            <!-- <?php if(is_category()): ?>
               <h1>Categoty</h1>
             <?php elseif(is_author()): ?>
               <h1>Author</h1>
@@ -25,8 +26,8 @@
               <h1>Date</h1>
             <?php else: ?>
               <h1>Tag</h1>
-            <?php endif; ?>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <?php endif; ?> -->
+            <span class="subheading"><?php bloginfo('description'); ?></span>
           </div>
         </div>
       </div>
